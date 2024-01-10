@@ -1,0 +1,36 @@
+#headerPiechart {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#svgDiv {
+    border: 1px solid #dbd8d8;
+    border-radius: 10px;
+    width: 70px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#PieChartDiv {
+    margin-left: 50px;
+    
+    }
+
+    #homeBottomDivleftdivsecond {
+        width: 500px;
+        height: 471px;
+        flex-shrink: 0;
+    }
+    
+
+    @media screen and (max-width: 1000px) {
+        #PieChartDiv
+         {
+            width: 100%;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    }
