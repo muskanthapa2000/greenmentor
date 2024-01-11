@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Bar,Line } from 'react-chartjs-2';
-import {Chart as chartjs} from 'chart.js/auto'
-import { useDispatch, useSelector } from 'react-redux';
+import { Bar } from 'react-chartjs-2';
+import { useSelector } from 'react-redux';
 import './custombar.css'
 import {Chart as ChartJS, LinearScale,CategoryScale,BarElement, PointElement, LineElement,Legend, Tooltip, LineController, BarController,} from 'chart.js';
 ChartJS.register(LinearScale, CategoryScale, BarElement, PointElement, LineElement, Legend, Tooltip, LineController, BarController);
@@ -78,10 +77,9 @@ export const CustomBar = () => {
     })
 
     return (
-      <div className='barchartbox'>
-        <p>Emission/Revenue</p>
+       
         <Bar data={useData} result={result} />
-      </div>
+      
     );
     
 }
